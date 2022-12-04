@@ -11,6 +11,5 @@ def find_max(data):
         if data[i] > max:
             max = data[i]
         i+=1
-
     return max
 print(find_max([1,7,3]))
