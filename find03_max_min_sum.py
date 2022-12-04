@@ -6,14 +6,16 @@ def find_max_min_sum(data):
     returns: sum of the maximum and minimum numbers in the list
     """
     i = 0
+    i2 = 0
     max = 0
     min = 0
     while i < len(data):
         if data[i] > max:
             max = data[i]
-
-        if data[i] < min:
-            min += 1
-        i+=1   
-
-    return max+min
+        
+        if data[i2] >= min:
+            min = data[i2]
+        i += 1
+    s = max + min
+    return s
+print(find_max_min_sum([3,5,8]))
