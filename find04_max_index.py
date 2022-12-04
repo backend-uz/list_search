@@ -11,5 +11,6 @@ def find_max_index(data):
         if data[i] > max:
             max = data[i]
         i+=1
-        index = find_max_index.index(max)
+        index = data.index(max)
     return index
+print(find_max_index([2,4,8,9]))
