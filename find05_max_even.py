@@ -13,4 +13,4 @@ def find_max_even(data):
                 mx = data[i]
         i += 1
     return mx
-print(find_max_even([1,9,7,8,6]))
+print(find_max_even([-1,9,7,-8,6]))
