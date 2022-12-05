@@ -7,7 +7,7 @@ def find_max_even(data):
     """
     i = 0
     mx = 0
-    while i < len(data):
+    while i <= len(data):
         if data[i] > mx:
             if data[i] % 2 == 0:
                 mx = data[i]
