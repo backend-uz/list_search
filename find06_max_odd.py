@@ -7,9 +7,10 @@ def find_max_odd(data):
     """
     i = 0
     mx = 0
-    while i >len(data):
+    while i < len(data):
         if data[i] > mx:
             if data[i] % 2 != 0:
                 mx = data[i]
         i += 1
     return mx
+print(find_max_odd([-1,9,7,-8,6]))
