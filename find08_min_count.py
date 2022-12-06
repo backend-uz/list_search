@@ -5,4 +5,11 @@ def find_min_count(data):
         data: list of numbers
     returns: count of minimum numbers in the list
     """
-    return 0
+    i = 0
+    min = data[0]
+    while i < len(data):
+        if data[i] < min:
+            min = data[i]
+        i += 1
+    return data.count(min)
+print(find_min_count([1,2,3,4,-1,-1]))
